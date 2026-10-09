@@ -249,7 +249,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .old__menu span { padding: 1cqi 1.6cqi; border-right: 1px solid #999; font-size: 1.45cqi; color: #003399; text-decoration: underline; }
 .old__body { flex: 1; display: grid; grid-template-columns: 22% 1fr; gap: 2cqi; padding: 2cqi 3cqi; }
 .old__side { background: #F4F1E6; border: 1px solid #aaa; padding: 1.5cqi; font-size: 1.35cqi; line-height: 1.7; color: #003399; text-decoration: underline; }
-.old__main h4 { margin: 0 0 1cqi; font-size: 2.5cqi; color: #8B0000; text-align: center; }
+.old__main .mh { display: block; margin: 0 0 1cqi; font-size: 2.5cqi; color: #8B0000; text-align: center; }
 .old__main p { font-size: 1.4cqi; line-height: 1.45; margin-bottom: 1.2cqi; text-align: justify; }
 .old__banner { margin: 1cqi 0; padding: 1.6cqi; background: repeating-linear-gradient(45deg, #FFE066, #FFE066 10px, #FFD23F 10px, #FFD23F 20px); border: 2px dashed #C00; text-align: center; color: #C00; font-weight: 700; font-size: 1.9cqi; }
 .old__counter { margin-top: auto; display: inline-block; padding: .5cqi 1cqi; background: #000; color: #0F0; font-family: monospace; font-size: 1.3cqi; }
@@ -262,7 +262,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .new__logo + span { margin-left: auto; }
 .new__top b { font-weight: 600; padding: .8cqi 2cqi; border-radius: var(--r-pill); background: #2F5D3A; color: #fff; }
 .new__hero { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 4cqi; padding: 2cqi 4cqi 4cqi; align-items: center; }
-.new__hero h4 { margin: 0; font-size: 4.4cqi; line-height: 1.02; letter-spacing: -.04em; font-weight: 700; }
+.new__hero .mh { display: block; margin: 0; font-size: 4.4cqi; line-height: 1.02; letter-spacing: -.04em; font-weight: 700; }
 .new__hero p { margin: 2cqi 0 3cqi; font-size: 1.7cqi; line-height: 1.45; color: #5E5E5E; }
 .new__cta { display: inline-block; padding: 1.5cqi 3cqi; border-radius: var(--r-pill); background: #2F5D3A; color: #fff; font-size: 1.6cqi; font-weight: 600; }
 .new__ticks { display: flex; gap: 2.4cqi; margin-top: 3cqi; font-size: 1.4cqi; color: #5E5E5E; }
