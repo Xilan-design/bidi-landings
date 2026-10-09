@@ -1,0 +1,51 @@
+<section class="order" id="order">
+  <div class="wrap">
+    <div class="order__box">
+      <div class="order__info">
+        <h2>{{title}}</h2>
+        <p>{{text}}</p>
+        <ul class="order__promise">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>{{p1}}</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>{{p2}}</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>Ни к чему не обязывает — просто разговор о задаче</li>
+        </ul>
+        <div class="order__alt">
+          <p>Удобнее написать? Ответим в мессенджере.</p>
+          <div class="msgr">
+            <a href="https://t.me/bidiby_bot" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M21 4 3 11l6 2.5L19 7l-8 8 6 5z"/></svg>Telegram</a>
+            <a href="viber://pa?chatURI=bidiby"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c5 0 8 2.5 8 7.5S17 18 12 18l-4 3v-3.5C5 16.5 4 14 4 10.5 4 5.5 7 3 12 3z"/></svg>Viber</a>
+            <a href="https://wa.me/375298971776" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <form class="form" data-form="{{goal}}" novalidate>
+        <input type="hidden" name="Форма" value="{{formname}}">
+        <p class="form__title">{{formtitle}}</p>
+        <fieldset class="field">
+          <legend class="field__label">Что нужно</legend>
+          <div class="chips"><!-- @include {{chips}} --></div>
+        </fieldset>
+        <!-- @include {{extra}} -->
+        <label class="field">
+          <span class="field__label">Как к вам обращаться</span>
+          <input type="text" name="Имя" autocomplete="name" maxlength="40" required>
+          <span class="field__error"></span>
+        </label>
+        <label class="field">
+          <span class="field__label">Телефон</span>
+          <input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+375 (__) ___-__-__" required>
+          <span class="field__error"></span>
+        </label>
+        <button class="btn btn--primary" type="submit">{{button}}</button>
+        <p class="form__legal">Нажимая кнопку, вы соглашаетесь на обработку персональных данных для ответа на заявку.</p>
+        <p class="form__fail" role="alert">Не получилось отправить. Позвоните нам: <a href="tel:+375336566663">+375 (33) 656-66-63</a> или напишите в Telegram.</p>
+        <div class="form__done" role="status">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m7.5 12 3 3 6-6.5"/></svg>
+          <h3>Заявка у нас</h3>
+          <p>Менеджер перезвонит в течение 15 минут в рабочее время (Пн–Пт <span class="nowrap">9:00–18:00</span>).</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
